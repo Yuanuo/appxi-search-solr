@@ -6,19 +6,19 @@
 
     <groupId>org.appxi</groupId>
     <artifactId>appxi-preset-search</artifactId>
-    <version>21.02.19</version>
+    <version>21.09.16</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>16</maven.compiler.release>
-        <solr>8.8.0</solr>
+        <maven.compiler.release>17</maven.compiler.release>
+        <solr>8.9.0</solr>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.3.4</version>
+            <version>5.3.10</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-solr</artifactId>
-            <version>4.3.5</version>
+            <version>4.3.12</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.solr</groupId>
