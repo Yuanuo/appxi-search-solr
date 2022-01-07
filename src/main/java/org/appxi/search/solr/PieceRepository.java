@@ -14,6 +14,8 @@ public interface PieceRepository extends SolrCrudRepository<Piece, String> {
         return str.replace(" ", "\\ ");
     }
 
+    void deleteAllByProvider(String provider);
+
     void deleteAllByPath(String path);
 
     void deleteAllByType(String type);

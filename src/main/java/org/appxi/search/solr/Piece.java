@@ -70,6 +70,66 @@ public class Piece {
 
     ///////////////////////////////////////////////////////////////////////////////////////
 
+    public Piece setId(String id) {
+        this.id = id;
+        return this;
+    }
+
+    public Piece setProvider(String provider) {
+        this.provider = provider;
+        return this;
+    }
+
+    public Piece setVersion(String version) {
+        this.version = version;
+        return this;
+    }
+
+    public Piece setPath(String path) {
+        this.path = path;
+        return this;
+    }
+
+    public Piece setType(String type) {
+        this.type = type;
+        return this;
+    }
+
+    public Piece setTitle(String title) {
+        this.title = title;
+        return this;
+    }
+
+    public Piece setPriority(double priority) {
+        this.priority = priority;
+        return this;
+    }
+
+    public Piece setProjects(Set<String> projects) {
+        this.projects = projects;
+        return this;
+    }
+
+    public Piece setCategories(Set<String> categories) {
+        this.categories = categories;
+        return this;
+    }
+
+    public Piece setFields(Map<String, String> fields) {
+        this.fields = fields;
+        return this;
+    }
+
+    public Piece setTexts(Map<String, String> texts) {
+        this.texts = texts;
+        return this;
+    }
+
+    public Piece setExtras(Map<String, Object> extras) {
+        this.extras = extras;
+        return this;
+    }
+
     public String field(String shortKey) {
         return fields.get(shortKey);
     }
@@ -100,6 +160,24 @@ public class Piece {
 
     public static Piece of() {
         return new Piece();
+    }
+
+    @Override
+    public Piece clone() {
+        return new Piece()
+                .setId(id)
+                .setVersion(version)
+                .setProvider(provider)
+                .setType(type)
+                .setPath(path)
+                .setTitle(title)
+                .setPriority(priority)
+                .setProjects(new HashSet<>(projects))
+                .setCategories(new HashSet<>(categories))
+                .setFields(new HashMap<>(fields))
+                .setTexts(new HashMap<>(texts))
+                .setExtras(new HashMap<>(extras))
+                ;
     }
 }
 
