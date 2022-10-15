@@ -6,22 +6,22 @@
 
     <groupId>org.appxi</groupId>
     <artifactId>search-solr</artifactId>
-    <version>22.07.22</version>
+    <version>22.10.15</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
         <solr>9.0.0</solr>
-        <slf4j.version>2.0.0-alpha6</slf4j.version>
-        <jackson.version.databind>2.13.3</jackson.version.databind>
-        <jackson.version.dataformat>2.13.3</jackson.version.dataformat>
+        <slf4j.version>2.0.3</slf4j.version>
+        <jackson.version.databind>2.13.4</jackson.version.databind>
+        <jackson.version.dataformat>2.13.4</jackson.version.dataformat>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.3.22</version>
+            <version>5.3.23</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
@@ -87,7 +87,7 @@
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-commons</artifactId>
-            <version>9.3</version>
+            <version>9.4</version>
         </dependency>
     </dependencies>
 
