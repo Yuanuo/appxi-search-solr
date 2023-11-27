@@ -6,22 +6,22 @@
 
     <groupId>org.appxi</groupId>
     <artifactId>search-solr</artifactId>
-    <version>22.11.19</version>
+    <version>23.11.08</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <solr>9.1.0</solr>
-        <slf4j.version>2.0.3</slf4j.version>
-        <jackson.version.databind>2.14.0</jackson.version.databind>
-        <jackson.version.dataformat>2.14.0</jackson.version.dataformat>
+        <solr>9.4.0</solr>
+        <slf4j.version>2.0.9</slf4j.version>
+        <jackson.version.databind>2.16.0-rc1</jackson.version.databind>
+        <jackson.version.dataformat>2.16.0-rc1</jackson.version.dataformat>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.3.23</version>
+            <version>6.0.11</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-solr</artifactId>
-            <version>4.4.1</version>
+            <version>5.1.0-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.solr</groupId>
@@ -49,6 +49,10 @@
                 <exclusion>
                     <groupId>org.apache.commons</groupId>
                     <artifactId>commons-lang3</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.activation</groupId>
+                    <artifactId>activation</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -85,9 +89,14 @@
             <version>${jackson.version.dataformat}</version>
         </dependency>
         <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-cbor</artifactId>
+            <version>${jackson.version.dataformat}</version>
+        </dependency>
+        <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-commons</artifactId>
-            <version>9.4</version>
+            <version>9.6</version>
         </dependency>
     </dependencies>
 

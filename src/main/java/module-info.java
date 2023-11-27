@@ -1,7 +1,6 @@
 module appxi.search.solr {
     requires transitive static appxi.search.solr.aio;
 
-    requires transitive static javax.servlet.api;
     requires transitive static spring.core;
     requires transitive static spring.context;
     requires transitive static spring.beans;
@@ -11,8 +10,11 @@ module appxi.search.solr {
     requires transitive com.fasterxml.jackson.annotation;
     requires transitive com.fasterxml.jackson.core;
     requires transitive com.fasterxml.jackson.databind;
+    requires transitive com.fasterxml.jackson.dataformat.cbor;
+    requires transitive com.fasterxml.jackson.dataformat.smile;
     requires transitive java.management;
     requires transitive java.naming;
+    requires transitive jdk.management;
 
     requires transitive org.slf4j;
     requires transitive org.slf4j.simple;
