@@ -6,15 +6,15 @@
 
     <groupId>org.appxi</groupId>
     <artifactId>search-solr</artifactId>
-    <version>23.11.08</version>
+    <version>24.05.16</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <solr>9.4.0</solr>
+        <solr>9.6.0</solr>
         <slf4j.version>2.0.9</slf4j.version>
-        <jackson.version.databind>2.16.0-rc1</jackson.version.databind>
-        <jackson.version.dataformat>2.16.0-rc1</jackson.version.dataformat>
+        <jackson.version.databind>2.16.1</jackson.version.databind>
+        <jackson.version.dataformat>2.16.1</jackson.version.dataformat>
     </properties>
 
     <dependencies>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-solr</artifactId>
-            <version>5.1.0-SNAPSHOT</version>
+            <version>[24.05.16,)</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.solr</groupId>

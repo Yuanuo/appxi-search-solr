@@ -20,8 +20,8 @@ module appxi.search.solr {
     requires transitive org.slf4j.simple;
     requires transitive org.apache.commons.logging;
     requires transitive org.apache.logging.log4j;
-    requires transitive static org.apache.logging.log4j.core;
-    requires transitive static org.apache.logging.log4j.slf4j;
+    requires transitive org.apache.logging.log4j.core;
+    requires transitive org.apache.logging.log4j.slf4j.impl;
 
     exports org.appxi.search.solr;
 
